@@ -1,0 +1,22 @@
+# Auto-generated from "Cargo.yml"
+[dependencies]
+wasm-bindgen = "^0.2"
+
+[dependencies.ekke_io]
+default-features = false
+features = ["wasm-rt"]
+path = "../ekke_io"
+
+[dependencies.web-sys]
+features = ["Document", "Element", "HtmlElement", "Node", "Window"]
+version = "^0.3"
+
+[lib]
+crate-type = ["cdylib"]
+path = "src/entrypoint.rs"
+
+[package]
+authors = ["Naja Melan <najamelan@autistici.org>"]
+edition = "2018"
+name = "ekke_core_frontend"
+version = "0.1.0"
