@@ -1,5 +1,6 @@
 # Auto-generated from "Cargo.yml"
 [dependencies]
+console_error_panic_hook = "0.1.6"
 wasm-bindgen = "^0.2"
 
 [dependencies.ekke_io]

@@ -14,7 +14,8 @@ lib:
 
 dependencies:
 
-  wasm-bindgen: ^0.2
+  console_error_panic_hook: 0.1.6
+  wasm-bindgen            : ^0.2
 
   ekke_io:
     path            : ../ekke_io

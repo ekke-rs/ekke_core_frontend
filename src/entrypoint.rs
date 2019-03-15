@@ -1,4 +1,5 @@
 use wasm_bindgen::prelude::*;
+use std::panic;
 
 use ekke_io::*;
 
@@ -8,6 +9,8 @@ use ekke_io::*;
 //
 pub fn main() -> Result<(), JsValue>
 {
+	panic::set_hook( Box::new( console_error_panic_hook::hook ) );
+
 	let _c = ConnID::new();
 
 	// Use `web_sys`'s global `window` function to get a handle on the global window object.
